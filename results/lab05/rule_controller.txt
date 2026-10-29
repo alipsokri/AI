@@ -1,0 +1,40 @@
+|--- US14 <= 0.90
+|   |--- class: Sharp-Right-Turn
+|--- US14 >  0.90
+|   |--- US18 <= 1.00
+|   |   |--- US18 <= 0.50
+|   |   |   |--- US13 <= 1.20
+|   |   |   |   |--- class: Sharp-Right-Turn
+|   |   |   |--- US13 >  1.20
+|   |   |   |   |--- US18 <= 0.50
+|   |   |   |   |   |--- class: Slight-Right-Turn
+|   |   |   |   |--- US18 >  0.50
+|   |   |   |   |   |--- class: Slight-Right-Turn
+|   |   |--- US18 >  0.50
+|   |   |   |--- US13 <= 0.90
+|   |   |   |   |--- class: Sharp-Right-Turn
+|   |   |   |--- US13 >  0.90
+|   |   |   |   |--- US17 <= 0.49
+|   |   |   |   |   |--- class: Slight-Right-Turn
+|   |   |   |   |--- US17 >  0.49
+|   |   |   |   |   |--- class: Move-Forward
+|   |--- US18 >  1.00
+|   |   |--- US17 <= 0.90
+|   |   |   |--- US17 <= 0.79
+|   |   |   |   |--- US13 <= 1.41
+|   |   |   |   |   |--- class: Move-Forward
+|   |   |   |   |--- US13 >  1.41
+|   |   |   |   |   |--- class: Move-Forward
+|   |   |   |--- US17 >  0.79
+|   |   |   |   |--- class: Slight-Right-Turn
+|   |   |--- US17 >  0.90
+|   |   |   |--- US18 <= 2.95
+|   |   |   |   |--- US13 <= 2.47
+|   |   |   |   |   |--- class: Slight-Left-Turn
+|   |   |   |   |--- US13 >  2.47
+|   |   |   |   |   |--- class: Slight-Left-Turn
+|   |   |   |--- US18 >  2.95
+|   |   |   |   |--- US13 <= 2.45
+|   |   |   |   |   |--- class: Slight-Left-Turn
+|   |   |   |   |--- US13 >  2.45
+|   |   |   |   |   |--- class: Move-Forward
