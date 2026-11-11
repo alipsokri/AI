@@ -1,6 +1,6 @@
-"""Lab 8: Airline Tweet Sentiment Classification.
+"""Lab 7: Airline Tweet Sentiment Classification.
 Install: python -m pip install pandas numpy scikit-learn matplotlib
-Run: python lab08_airline_sentiment.py
+Run: python lab07_airline_sentiment.py
 Default CSV: all_datasets/lab07-Tweets.csv
 """
 import argparse, re
@@ -37,7 +37,7 @@ def metrics(name, y, pred):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="all_datasets/lab07-Tweets.csv")
-    ap.add_argument("--out", default="lab8_results")
+    ap.add_argument("--out", default="results/lab07")
     args = ap.parse_args()
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
     raw = pd.read_csv(args.data)
